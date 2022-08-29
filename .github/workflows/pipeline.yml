@@ -50,5 +50,5 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v2
         with:
-          username: $aliarslandocker
+          username: aliarslandocker
           password: ${{ secrets.docker_pass }}
