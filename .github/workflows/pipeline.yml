@@ -16,22 +16,22 @@ on:
 
 jobs:
 
-  build:
+#   build:
 
-    runs-on: ubuntu-latest
+#     runs-on: ubuntu-latest
 
-#Step is an indivisual step
-    steps:
-      - uses: actions/checkout@v3
-      - name: Run a one-line script
-        run: echo Hello, world!
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          docker image ls
+# #Step is an indivisual step
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: Run a one-line script
+#         run: echo Hello, world!
+#       - name: Run a multi-line script
+#         run: |
+#           echo Add other actions to build,
+#           echo test, and deploy your project.
+#           docker image ls
 
-  # define job to build and publish docker image
+#   # define job to build and publish docker image
   build-and-push-docker-image:
     name: Build Docker image and push to repositories
     # run only when code is compiling and tests are passing
