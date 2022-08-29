@@ -30,9 +30,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           docker image ls
-      - name: Docker build image
-        run: docker build
-        
+
   # define job to build and publish docker image
   build-and-push-docker-image:
     name: Build Docker image and push to repositories
